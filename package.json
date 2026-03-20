@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "glassfrog",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby and TailwindCSS",
-  "version": "0.3.0",
-  "author": "Kostas Vrouvas <hello@kosvrouvas.com>",
+  "description": "Personal hub for interactive documentation, dashboards, and tools",
+  "version": "1.0.0",
+  "author": "James Howard Crandall",
   "dependencies": {
     "autoprefixer": "^10.2.6",
     "gatsby": "^3.7.1",
@@ -43,9 +43,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kosvrouvas/gatsby-tailwindcss-starter"
+    "url": "https://github.com/jameshowardcrandall/glassfrog"
   },
   "bugs": {
-    "url": "https://github.com/kosvrouvas/gatsby-tailwindcss-starter/issues"
+    "url": "https://github.com/jameshowardcrandall/glassfrog/issues"
   }
 }
