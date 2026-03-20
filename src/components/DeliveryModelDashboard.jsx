@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react"
-import { Helmet } from "react-helmet"
+import { useState, useEffect } from "react";
 
 const redmPhases = [
   {
@@ -32,7 +31,7 @@ const redmPhases = [
     activities: ["Mission-driven enhancements", "Telemetry & audit monitoring", "Policy-driven workflow updates", "Leadership turnover continuity"],
     output: "Continuous net-new operational data"
   }
-]
+];
 
 const analyticsPhases = [
   {
@@ -65,7 +64,7 @@ const analyticsPhases = [
     activities: ["Build dashboards & reports", "Deliver decision support", "Enable self-service analytics", "Feed AI/ML systems"],
     input: "Curated data products"
   }
-]
+];
 
 const comparisons = [
   { dimension: "Primary Function", redm: "Produce & generate data", analytics: "Consume & synthesize data" },
@@ -78,10 +77,10 @@ const comparisons = [
   { dimension: "Tooling", redm: "Power Platform, Dataverse, Azure", analytics: "Vantage, Foundry, Power BI" },
   { dimension: "Team Model", redm: "Architect-led product team", analytics: "Analyst / ORSA / data scientist" },
   { dimension: "Delivery Cadence", redm: "Continuous — same-day to weekly", analytics: "Project or report-scoped" },
-]
+];
 
 function PhaseCard({ phase, accentColor, inputLabel, isMobile }) {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
   return (
     <div style={{ display: "flex", gap: 12, marginBottom: 8 }}>
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", width: 32, flexShrink: 0 }}>
@@ -143,34 +142,28 @@ function PhaseCard({ phase, accentColor, inputLabel, isMobile }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default function IndexPage() {
-  const [activeTab, setActiveTab] = useState("lifecycle")
-  const [isMobile, setIsMobile] = useState(false)
+export default function DeliveryModelDashboard() {
+  const [activeTab, setActiveTab] = useState("lifecycle");
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < 768)
-    check()
-    window.addEventListener("resize", check)
-    return () => window.removeEventListener("resize", check)
-  }, [])
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
 
   const tabs = [
     { id: "lifecycle", label: "Lifecycle" },
     { id: "flow", label: "Data Flow" },
     { id: "matrix", label: "Matrix" }
-  ]
+  ];
 
   return (
     <div style={{ fontFamily: "'Georgia', serif", background: "#0d1117", minHeight: "100vh", color: "#e8e8e8" }}>
-      <Helmet>
-        <title>Delivery Model Analysis — Product Engineering vs. Analytics</title>
-        <meta name="description" content="REDM Product Engineering vs Analytics Delivery Model comparison dashboard" />
-        <html lang="en" />
-        <style>{`body { margin: 0; padding: 0; background: #0d1117; }`}</style>
-      </Helmet>
 
       {/* Header */}
       <div style={{
@@ -421,5 +414,5 @@ export default function IndexPage() {
         )}
       </div>
     </div>
-  )
+  );
 }
