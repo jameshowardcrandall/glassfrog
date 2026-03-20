@@ -1,51 +1,24 @@
 {
   "name": "glassfrog",
-  "private": true,
-  "description": "Personal hub for interactive documentation, dashboards, and tools",
+  "type": "module",
   "version": "1.0.0",
+  "description": "Personal hub for interactive documentation, dashboards, and tools",
   "author": "James Howard Crandall",
-  "dependencies": {
-    "autoprefixer": "^10.2.6",
-    "gatsby": "^3.7.1",
-    "gatsby-image": "^3.7.1",
-    "gatsby-plugin-google-analytics": "^3.7.1",
-    "gatsby-plugin-image": "^1.7.1",
-    "gatsby-plugin-manifest": "^3.7.1",
-    "gatsby-plugin-offline": "^4.7.1",
-    "gatsby-plugin-postcss": "^4.7.1",
-    "gatsby-plugin-purgecss": "^6.0.2",
-    "gatsby-plugin-react-helmet": "^4.7.1",
-    "gatsby-plugin-sharp": "^3.7.1",
-    "gatsby-source-filesystem": "^3.7.1",
-    "gatsby-transformer-sharp": "^3.7.1",
-    "postcss": "^8.3.4",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0"
-  },
-  "devDependencies": {
-    "prettier": "^2.3.1",
-    "tailwindcss": "^2.1.4"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
+  "private": true,
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.16.0",
+    "@astrojs/react": "^3.6.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/jameshowardcrandall/glassfrog"
-  },
-  "bugs": {
-    "url": "https://github.com/jameshowardcrandall/glassfrog/issues"
   }
 }

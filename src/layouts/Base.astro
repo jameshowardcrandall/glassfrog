@@ -1,0 +1,26 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Personal hub for interactive documentation, dashboards, and tools" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/glassfrog/favicon.svg" />
+    <title>{title}</title>
+    <style is:global>
+      *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+      body { background: #0d1117; color: #e8e8e8; font-family: 'Georgia', serif; }
+    </style>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
