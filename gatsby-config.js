@@ -1,8 +1,9 @@
 module.exports = {
+  pathPrefix: `/glassfrog`,
   siteMetadata: {
-    title: `Gatsby TailwindCSS Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter with TailwindCSS and common dev tools. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@kosvrouvas`,
+    title: `Delivery Model Analysis`,
+    description: `Product Engineering vs Analytics — REDM Delivery Model Dashboard`,
+    author: `@jameshowardcrandall`,
   },
   flags: {
     THE_FLAG: false
